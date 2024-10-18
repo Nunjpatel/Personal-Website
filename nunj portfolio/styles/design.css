@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0d1117, #161b22);
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c232d;
+}
+
+#typewriter {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    font-family: 'Orbitron', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 12ch; 
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12ch;
+    }
+}
+
+
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    border-radius: 5px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    background: linear-gradient(to right, #0d1117, #161b22);
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+}
+
+#hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    color: #0d1117;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: scale(1.1);
+}
+
+
+#about {
+    background-color: #1c232d;
+    /*padding: 20px;*/
+    border-radius: 10px;
+    margin: 20px;
+    border: 2px solid #58a6ff; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+#about h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #58a6ff; 
+}
+
+
+.achievements {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.achievements li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+    color: #c9d1d9;
+}
+
+.achievements li:before {
+    content: "⚡";
+    color: #58a6ff;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+
+.section {
+    padding: 50px 20px;
+    background-color: #161b22;
+    text-align: center;
+    border: 1px solid #58a6ff;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #58a6ff;
+    
+}
+
+.education-section {
+    background: linear-gradient(to right, #0d1117, #161b22);
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.education-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+.education-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #58a6ff; 
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.education-item:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.university-logo {
+    width: 150px; 
+    height: 80;
+    display: block;
+    margin: 0 auto 10px; 
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #58a6ff; 
+}
+
+.education-item h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.education-item p, .education-item ul {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.education-item ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+
+.skills-section {
+    background-color: #1c232d;
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+.skill {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #58a6ff; 
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.skill h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #58a6ff;
+}
+
+.skill p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.certifications-section {
+    background-color: #161b22;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.certifications-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+.certifications-section p {
+    margin-bottom: 20px;
+}
+
+.certification-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #58a6ff; 
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: left; 
+}
+
+.certification-item h3 {
+    color: #58a6ff;
+    font-size: 1.5em;
+}
+
+.certification-item p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.certification-item a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.certification-item a:hover {
+    color: #0d1117;
+    background-color: #58a6ff;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.certificate-image {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.certificate-image img {
+    width: 100px; 
+    transition: transform 0.3s;
+}
+
+.certificate-image img:hover {
+    transform: scale(3.5); 
+}
+
+
+.projects-section {
+    background-color: #1c232d;
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #58a6ff; 
+}
+
+.projects-section p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #58a6ff; 
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.project-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #58a6ff;
+}
+
+.project-item h3 a {
+    text-decoration: none;
+    color: #58a6ff; 
+}
+
+.project-item h3 a:hover {
+    text-decoration: underline; 
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #58a6ff; 
+    color: #0d1117; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.github-link:hover {
+    background-color: #0d1117; 
+    color: #58a6ff; 
+    transform: scale(1.05); 
+}
+
+.contact-section {
+    background-color: #161b22; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; 
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #58a6ff; 
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.contact-icon img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s; 
+}
+
+.contact-icon:hover img {
+    transform: scale(1.1); 
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161b22;
+    color: #8b949e;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
